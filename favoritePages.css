@@ -1,0 +1,62 @@
+.favorites-page-content {
+  width: 100%;
+  padding: 37px 64px 89px 64px;
+}
+
+.favorites-page-title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #F2C72D;
+}
+
+.favorite-movies-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 700;
+  font-size: 32px;
+  gap: 15px;
+  margin-top: 48px;
+}
+
+.number-favorite-movies {
+  width: 49px;
+  height: 41px;
+  background-color: #F2C72D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-movie-result {
+  display: flex;
+  gap: 72px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.favorite-movie {
+  margin-bottom: 47px;
+}
+
+.add-favorite-movie {
+  width: 294px;
+  height: 407px;
+  background: linear-gradient(270deg, rgba(185, 181, 181, 0.3) 0%, rgba(227, 213, 213, 0.3) 69.71%, rgba(185, 181, 181, 0.3) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-favorite-movie-icon {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DADADA;
+  border-radius: 100%;
+  font-size: 128px;
+  font-weight: 700;
+  cursor: pointer;
+}

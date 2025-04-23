@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="favoritePages.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="nav-menu">
+    <img src="img/LogoItem.png" alt="">
+    <div class="nav-btn">
+      <a href="./index.html">Home</a>
+      <a href="./moviesPage.html">Movies</a>
+      <a href="./favoritePages.html">Favorites</a>
+      <a href="./aboutUsPage.html">About</a>
+      <a href="./loginForm.html">
+        <div class="login-btn">
+          <p>Login</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="favorites-page-content">
+    <div class="favorites-page-title">
+      <p>Favorites</p>
+    </div>
+    <div class="favorite-movies">
+      <div class="favorite-movies-title">
+        <p>Movies you've liked: </p>
+        <div class="number-favorite-movies">
+          <p></p>
+        </div>
+      </div>
+      <div class="favorite-movie-result">
+
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-logo">
+      <img src="img/Logo(Footer).png" alt="">
+      <p>© 2025 Cine Crave, Inc. All rights reserved.</p>
+    </div>
+    <div class="footer-information">
+      <div class="detail-information">
+        <p>Company</p>
+        <a href="aboutUsPage.html">About Us</a>
+        <p>Our Mission</p>
+        <p>Careers</p>
+        <a href="registerForm.html">Contact</a>
+      </div>
+      <div class="detail-information">
+        <p>Resources</p>
+        <p>Movie News</p>
+        <p>Reviews</p>
+        <p>Trailers</p>
+        <p>FAQs</p>
+      </div>
+      <div class="detail-information">
+        <p>Follow Us</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+        <p>Facebook</p>
+        <a href="https://www.youtube.com/@quanggck7908">Youtube</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    const favoriteMovieResult = document.querySelector(".favorite-movie-result");
+    let favoriteMovies = [
+      {
+        name: "UFO",
+        img: "img/bia20.png"
+      },
+      {
+        name: "Captain America: Brand New World",
+        img: "img/bia2.png"
+      },
+      {
+        name: "DareDevil: Born Again",
+        img: "img/bia10.png"
+      },
+      {
+        name: "Thunderbolts",
+        img: "img/bia16.png"
+      }
+    ];
+    let numberFavoriteMoviesP = document.querySelector(".number-favorite-movies p");
+
+    const renderMovies = () => {
+      numberFavoriteMoviesP.textContent = favoriteMovies.length;
+      favoriteMovies.forEach((item) => {
+        favoriteMovieResult.innerHTML += `
+          <div class="category-movie favorite-movie">
+            <img src=${item.img} alt="">
+            <div class="category-movie-name">
+              <p>${item.name}</p>
+            </div>
+            <div class="score-box">
+              <div class="vote">
+                <p>Vote: 3.214</p>
+              </div>
+              <div class="start">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <a href="./detailMovie.html" class="information-btn-href">
+              <div class="information-btn">
+                <p>Information</p>
+              </div>
+            </a>
+            <div class="add-favorite-btn">
+              <p>Delete</p>
+            </div>
+          </div>
+        `;
+      });
+      favoriteMovieResult.innerHTML += `
+        <div class="add-favorite-movie">
+          <div class="add-favorite-movie-icon">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>`;
+
+      const addFavoriteMovieIcon = document.querySelector(".add-favorite-movie-icon");
+
+      addFavoriteMovieIcon.addEventListener("click", () => {
+        let randomNumber = Math.floor(Math.random() * 20) + 1;
+        favoriteMovies.push({
+          name: "Movie name",
+          img: `img/bia${randomNumber}.png`
+        });
+        favoriteMovieResult.innerHTML = ``;
+        renderMovies();
+      })
+    }
+
+    renderMovies();
+
+  </script>
+</body>
+
+</html>

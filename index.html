@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="nav-menu">
+    <img src="img/LogoItem.png" alt="">
+    <div class="nav-btn">
+      <a href="./index.html">Home</a>
+      <a href="./moviesPage.html">Movies</a>
+      <a href="./favoritePages.html">Favorites</a>
+      <a href="./aboutUsPage.html">About</a>
+      <a href="./loginForm.html">
+        <div class="login-btn">
+          <p>Login</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="banner">
+    <img src="img/bannerImg.png" alt="">
+    <div class="banner-title">
+      <p>The World of Movies</p>
+    </div>
+    <div class="description">
+      <p>Explore the latest blockbusters, discover hidden gems, and plan your perfect movie night</p>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search Movies">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="suggest-box">
+        <div class="suggest-movies">
+          <img src="img/bia3.png" alt="">
+          <div class="info-suggest-movie">
+            <p>Movie Name</p>
+            <p>Follow Moiraine, a member of the shadowy and influential all-female organization called the “Aes Sedai”
+              as she...</p>
+          </div>
+        </div>
+        <div class="suggest-movies">
+          <img src="img/bia1.png" alt="">
+          <div class="info-suggest-movie">
+            <p>Movie Name</p>
+            <p>Follow Moiraine, a member of the shadowy and influential all-female organization called the “Aes Sedai”
+              as she...</p>
+          </div>
+        </div>
+        <div class="suggest-movies">
+          <img src="img/bia5.png" alt="">
+          <div class="info-suggest-movie">
+            <p>Movie Name</p>
+            <p>Follow Moiraine, a member of the shadowy and influential all-female organization called the “Aes Sedai”
+              as she...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="popular">
+      <div class="popular-title">
+        <p>What's Popular</p>
+      </div>
+      <div class="popular-movie-box">
+        <div class="popular-movie">
+          <img src="img/bia6.png" alt="">
+          <div class="circle-score">
+            <p>100%</p>
+          </div>
+          <div class="popular-movie-name">
+            <p>Lycoric Recoils</p>
+          </div>
+        </div>
+        <div class="popular-movie">
+          <img src="img/bia1.png" alt="">
+          <div class="circle-score">
+            <p>87%</p>
+          </div>
+          <div class="popular-movie-name">
+            <p>Black Mirror</p>
+          </div>
+        </div>
+        <div class="popular-movie">
+          <img src="img/bia7.png" alt="">
+          <div class="circle-score">
+            <p>90%</p>
+          </div>
+          <div class="popular-movie-name">
+            <p>The Fantastic Four</p>
+          </div>
+        </div>
+        <div class="popular-movie">
+          <img src="img/bia8.png" alt="">
+          <div class="circle-score">
+            <p>60%</p>
+          </div>
+          <div class="popular-movie-name">
+            <p>A Working Man</p>
+          </div>
+        </div>
+        <div class="popular-movie">
+          <img src="img/bia9.png" alt="">
+          <div class="circle-score">
+            <p>95%</p>
+          </div>
+          <div class="popular-movie-name">
+            <p>The Joker</p>
+          </div>
+        </div>
+        <img src="img/mo1.png" alt="" class="mo1">
+        <img src="img/mo2.png" alt="" class="mo2">
+        <div class="group-slide-btn">
+          <div class="slide-btn"></div>
+          <div class="slide-btn"></div>
+          <div class="slide-btn"></div>
+          <div class="slide-btn"></div>
+          <div class="slide-btn"></div>
+        </div>
+      </div>
+    </div>
+    <div class="featured">
+      <div class="featured-title">
+        <p>Featured Category</p>
+      </div>
+      <div class="category-movies">
+        <div class="category-movie">
+          <img src="img/bia2.png" alt="">
+          <div class="category-movie-name">
+            <p>Captain America: Brand New World</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 1.610</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia10.png" alt="">
+          <div class="category-movie-name">
+            <p>DareDevil: Born Again</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 2.410</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia11.png" alt="">
+          <div class="category-movie-name">
+            <p>The Stolen</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 3.214</p>
+            </div>2.341<div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia12.png" alt="">
+          <div class="category-movie-name">
+            <p>Minecraft The Movie</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 1.467</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia13.png" alt="">
+          <div class="category-movie-name">
+            <p>Hell Factory</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 2.463</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia14.png" alt="">
+          <div class="category-movie-name">
+            <p>Fork &Scissors</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 2.519</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia15.png" alt="">
+          <div class="category-movie-name">
+            <p>Enclyopedia</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 2.519</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia16.png" alt="">
+          <div class="category-movie-name">
+            <p>Thunderbolts</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 2.662</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia17.png" alt="">
+          <div class="category-movie-name">
+            <p>The Woman In The Yard</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 2.662</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia18.png" alt="">
+          <div class="category-movie-name">
+            <p>Absolution</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 2.131</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia19.png" alt="">
+          <div class="category-movie-name">
+            <p>The Last Of Us</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 4.399</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+        <div class="category-movie">
+          <img src="img/bia8.png" alt="">
+          <div class="category-movie-name">
+            <p>A Working Man</p>
+          </div>
+          <div class="score-box">
+            <div class="vote">
+              <p>Vote: 3.528</p>
+            </div>
+            <div class="start">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <a href="./detailMovie.html" class="information-btn-href">
+            <div class="information-btn">
+              <p>Information</p>
+            </div>
+          </a>
+          <div class="add-favorite-btn">
+            <p>Add to favorite</p>
+          </div>
+        </div>
+      </div>
+      <div class="see-more-box">
+        <div class="see-more-btn">
+          <p>See more...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-logo">
+      <img src="img/Logo(Footer).png" alt="">
+      <p>© 2025 Cine Crave, Inc. All rights reserved.</p>
+    </div>
+    <div class="footer-information">
+      <div class="detail-information">
+        <p>Company</p>
+        <a href="aboutUsPage.html">About Us</a>
+        <p>Our Mission</p>
+        <p>Careers</p>
+        <a href="registerForm.html">Contact</a>
+      </div>
+      <div class="detail-information">
+        <p>Resources</p>
+        <p>Movie News</p>
+        <p>Reviews</p>
+        <p>Trailers</p>
+        <p>FAQs</p>
+      </div>
+      <div class="detail-information">
+        <p>Follow Us</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+        <p>Facebook</p>
+        <a href="https://www.youtube.com/@quanggck7908">Youtube</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    const categoryMovie = document.querySelectorAll(".category-movie");
+    const seeMoreBtn = document.querySelector(".see-more-btn");
+    const seeMoreBtnP = document.querySelector(".see-more-btn p");
+
+    let hideMovie = [8, 9, 10, 11];
+
+    categoryMovie.forEach((item, index) => {
+      if (hideMovie.includes(index)) {
+        item.classList.add("hide");
+      }
+    });
+
+    const handleBtnClick = () => {
+      if (hideMovie.length === 0) {
+        hideMovie = [8, 9, 10, 11];
+        seeMoreBtnP.textContent = "See more...";
+        categoryMovie.forEach((item, index) => {
+          if (hideMovie.includes(index)) {
+            item.classList.add("hide");
+          }
+        })
+      } else {
+        hideMovie = [];
+        seeMoreBtnP.textContent = "Hide";
+        categoryMovie.forEach((item, index) => {
+          item.classList.remove("hide");
+        })
+      }
+    }
+
+    seeMoreBtn.addEventListener("click", handleBtnClick);
+  </script>
+</body>
+
+</html>
